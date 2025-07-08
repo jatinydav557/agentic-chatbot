@@ -23,44 +23,6 @@ This chatbot offers three distinct modes of operation, selectable via the UI:
 
 The core of this project is built upon LangGraph's `StateGraph`, allowing for flexible and dynamic execution paths based on the selected use case and user input.
 
-### 🧠 Architectural Overview (Graph View)
-
-The system dynamically constructs a LangGraph pipeline depending on the selected use case:
-
-```mermaid
-graph LR
-    subgraph Basic Chatbot
-        start_basic[Start] --> chatbot_basic[Basic Chatbot Node] --> end_basic[End]
-    end
-
-    subgraph Chatbot with Web Search
-        start_web[Start] --> chatbot_web[Chatbot with Tools Node]
-        chatbot_web --> |Tool Call?| tool_node[Tool Node (Tavily)]
-        tool_node --> chatbot_web
-        chatbot_web --> |No Tool Call| end_web[End]
-    end
-
-    subgraph AI News Summarizer
-        start_news[Start] --> fetch_news[Fetch News Node] --> summarize_news[Summarize News Node] --> save_result[Save Result Node] --> end_news[End]
-    end
-
-    classDef default fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef mainNode fill:#ace,stroke:#333,stroke-width:2px;
-    class chatbot_basic,chatbot_web,fetch_news,summarize_news,save_result,tool_node mainNode;
-````
-
-#### Node Breakdown:
-
-  * **`BasicChatbotNode`**: Handles simple conversational exchanges.
-  * **`ChatbotWithToolNode`**:
-      * **Agent Functionality**: Decides whether a tool is needed based on the user's query.
-      * **Tool Integration**: Binds external tools (like `TavilySearch`) to the LLM.
-  * **`ToolNode`**: Executes the selected tool (e.g., performing a web search).
-  * **`AINewsNode`**:
-      * **`fetch_news`**: Gathers AI news articles from the web using Tavily.
-      * **`summarize_news`**: Uses the LLM to condense fetched articles into a structured summary.
-      * **`save_result`**: Persists the generated news summary into a Markdown file.
-
 ### 🧱 Built With
 
 | Tool                | Purpose                                      |
@@ -129,7 +91,7 @@ python-dotenv
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/yourusername/agentic-chatbot.git](https://github.com/jatinydav557/agentic-chatbot.git)
+    git clone [https://github.com/jatinydav557/agentic-chatbot.git](https://github.com/jatinydav557/agentic-chatbot.git)
     cd agentic-chatbot
     ```
 
