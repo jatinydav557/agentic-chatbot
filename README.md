@@ -1,8 +1,6 @@
-Okay, this is an excellent project with clear functionalities\! Here's a polished and impactful `README.md` for your **LangGraph-based Agentic Chatbot** that incorporates all three functionalities (Basic Chatbot, Chatbot with Web Search, and AI News Summarizer).
 
-I've structured it to highlight the modularity and agentic nature of your solution.
+▶️ YouTube Demo: [Watch Here](https://www.youtube.com/watch?v=7_6upQr9E2k&list=PLe-YIIlt-fbNajMvdZoBUdjZNbmLOMJSU&index=3&ab_channel=Jatin)  
 
-````markdown
 # 🤖 LangGraph Agentic Chatbot
 
 The **LangGraph Agentic Chatbot** is a versatile and intelligent conversational agent built using **LangGraph**, **LangChain**, and powered by **GROQ's Llama3**. This project demonstrates advanced agentic workflows, enabling the chatbot to dynamically adapt its behavior based on user intent – offering basic conversation, web-enhanced search, and automated AI news summaries.
@@ -131,8 +129,8 @@ python-dotenv
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/yourusername/langgraph-agentic-chatbot.git](https://github.com/yourusername/langgraph-agentic-chatbot.git)
-    cd langgraph-agentic-chatbot
+    git clone [https://github.com/yourusername/agentic-chatbot.git](https://github.com/jatinydav557/agentic-chatbot.git)
+    cd agentic-chatbot
     ```
 
 2.  **Create `.env` file:**
@@ -188,7 +186,6 @@ It's a strong showcase of agentic AI principles in action, built for flexibility
 
 ## 🤝 Credits
 
-  * [suspicious link removed]
   * [LangChain](https://www.langchain.com/)
   * [GROQ](https://groq.com/)
   * [Tavily AI](https://tavily.com/)
@@ -198,11 +195,11 @@ It's a strong showcase of agentic AI principles in action, built for flexibility
 
 ## 🙋‍♂️ Let's Connect
 
-  * **💼 LinkedIn:** [Your LinkedIn Profile URL]
-  * **📦 GitHub:** [Your GitHub Profile URL]
-  * **📬 Email:** your@email.com
+* **💼 LinkedIn:** [www.linkedin.com/in/jatin557](https://www.linkedin.com/in/jatin557)
+* **📦 GitHub:** [https://github.com/jatinydav557](https://github.com/jatinydav557)
+* **📬 Email:** [jatinydav557@gmail.com](mailto:jatinydav557@gmail.com)
+* **📱 Contact:** [`+91-7340386035`](tel:+917340386035)
+* **🎥 YouTube:** [Checkout my other working projects](https://www.youtube.com/@jatinML/playlists)
 
-Made with ❤️ by an AI enthusiast who transforms ML, NLP, DL, GenAI, and Agentic AI concepts into practical, impactful solutions.
-
-```
-```
+-----
+Thank you for going through my project
